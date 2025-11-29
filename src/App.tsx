@@ -1,18 +1,18 @@
 import FloatingLines from "./FloatingLines";
-
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div className="w-screen h-screen relative">
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-2 rounded bg-white bg-opacity-75 text-gray-800 z-10 text-3xl font-bold">
-          Welcome
-        </h1>
-
+      <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black z-10">
+        Hello
+      </h1>
+      <div style={{ width: "100%", height: "600px", position: "relative" }}>
         <FloatingLines
           enabledWaves={["top", "middle", "bottom"]}
+          // Array - specify line count per wave; Number - same count for all waves
           lineCount={[10, 15, 20]}
+          // Array - specify line distance per wave; Number - same distance for all waves
           lineDistance={[8, 6, 4]}
           bendRadius={5.0}
           bendStrength={-0.5}
