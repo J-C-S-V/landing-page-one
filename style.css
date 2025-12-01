@@ -100,6 +100,7 @@ a {
 .approach {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
   align-items: center;
   max-width: 120rem;
