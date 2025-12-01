@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -10,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
+  font-family: 'Montserrat', system-ui, 'Segoe UI', 'Open Sans', sans-serif;
 }
 
 li {
@@ -22,10 +25,13 @@ a {
 }
 
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  background-color: #fff;
 }
 
 .header__ul {
@@ -35,31 +41,57 @@ a {
 }
 
 .header__ctas {
-  border: 1px solid black;
+  border: 1px solid #000;
   padding: .5rem 1rem;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   transition: background-color .3s ease-in-out;
 }
 
 .header__ctas:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
+}
+
+.main {
+  position: relative;
 }
 
 .main__svg-container {
   position: relative;
+  height: 100dvh;
 }
 
 .main__h1-container {
-  color:rgb(25, 26, 43);
+  min-width: 80%;
+  color:rgba(255, 255, 255, 0.895);
   position: absolute;
-  padding: 1rem 4rem;
+  padding: 4rem 4rem;
   border-radius: 1rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.219);
-  backdrop-filter: blur(4px);
-  white-space: nowrap;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.main__p {
+  font-size: 1.8rem;
+  margin: 4rem;
+  font-weight: 300;
+}
+
+.main__cta-one, .main__cta-two {
+  display: inline-block;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  padding: .8rem 1.5rem;
+  margin: 2rem;
+  transition: background-color .3s ease-in-out;
+}
+
+.main__cta-one:hover, .main__cta-two:hover {
+  background-color: #000;
+  color: #fff;
 }
