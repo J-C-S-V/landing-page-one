@@ -55,6 +55,7 @@ a {
 
 .main {
   position: relative;
+  background-color: #000;
 }
 
 .main__svg-container {
@@ -95,3 +96,32 @@ a {
   background-color: #000;
   color: #fff;
 }
+
+.approach {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 120rem;
+  padding: 8rem 4rem;
+  gap: 4rem;
+  color: #fff;
+}
+
+.approach__left {
+  max-width: 50rem;
+}
+
+.approach__cta-one, .approach__cta-two {
+  color: #fff
+}
+
+.services__cards {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
